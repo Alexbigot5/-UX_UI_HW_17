@@ -1,48 +1,87 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.inline-block {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation img {
+    height: 50px;
+}
+
+.navigation nav ul {
+    list-style-type: none;
+}
+
+.navigation nav ul li {
     display: inline-block;
-    vertical-align: top;
+    margin-left: 20px;
 }
 
-.logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+.navigation nav ul li a {
+    text-decoration: none;
+    color: black;
 }
 
-nav {
-    width: 73%;
-    padding: 1%;
-}
-
-nav ul {
-    width: 50%;
-    margin-left: auto;
-}
-
-/* Hero image CSS */
+/* Hero section */
 .heroImg {
-    height: 600px;
-    padding: 25px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
 }
 
 .heroImg .content {
-    width: 500px;
-    margin: 0 auto;
+    text-align: center;
 }
 
-/* Footer CSS */
+.heroImg .content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.heroImg .content p {
+    margin-top: 20px;
+}
+
+.heroImg .content button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
-    background-color: #373738;
-    padding: 20px; 
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
-footer ul {
+footer nav ul li {
     display: inline-block;
-    vertical-align: top;
-    padding: 20px; 
+    margin: 0 10px;
 }
 
-footer li {
-    padding: 10px; 
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
